@@ -1,0 +1,1 @@
+export {flatternFile} from "./app";
