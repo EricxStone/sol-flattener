@@ -3,6 +3,7 @@
 This repository consists of a utility which helps to flatten Solidity file for verification.
 
 Git Repo: https://github.com/EricxStone/sol-flattener
+
 NPM: https://www.npmjs.com/package/@ericxstone/sol-flattener
 
 ## Usage
