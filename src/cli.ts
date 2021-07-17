@@ -31,7 +31,7 @@ const libFolderPath = args[1]
 const outputFilePath = args[2];
 
 const flattenedString: string = flatternFile(filePath, libFolderPath);
-if (!fs.existsSync(outputFilePath)) fs.mkdirSync(path.dirname(outputFilePath))
+if (!fs.existsSync(path.dirname(outputFilePath))) fs.mkdirSync(path.dirname(outputFilePath))
 fs.writeFileSync(outputFilePath, flattenedString)
 
 console.log(`Flattened file ${filePath} and saved to ${outputFilePath}`);
