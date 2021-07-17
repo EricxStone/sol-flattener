@@ -2,6 +2,9 @@
 
 This repository consists of a utility which helps to flatten Solidity file for verification.
 
+Git Repo: https://github.com/EricxStone/sol-flattener
+NPM: https://www.npmjs.com/package/@ericxstone/sol-flattener
+
 ## Usage
 
 There are two ways of using this utilities. You can either import this package to your code or use it as a cli.
@@ -56,3 +59,32 @@ flatternFile(contractFilePath: string, libDirPath: string): string
 ```
 
 The function takes the contract file path and path to the node_modules as argument. The flattened solidity file will be output in string format.
+
+## Development
+
+You may also want to contribute to this library. Follow below steps to setup development environment.
+
+1. Clone this repository
+```
+git clone https://github.com/EricxStone/sol-flattener
+```
+
+2. Install dependencies
+```
+yarn
+```
+
+3. Run test
+```
+yarn test
+```
+
+4. Build Cli
+```
+yarn build
+```
+
+## License
+
+[MIT](LICENSE)
+

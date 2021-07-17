@@ -28,7 +28,7 @@ const filePath = args[0];
 const libFolderPath = args[1];
 const outputFilePath = args[2];
 const flattenedString = app_1.flatternFile(filePath, libFolderPath);
-if (!fs_1.default.existsSync(outputFilePath))
+if (!fs_1.default.existsSync(path_1.default.dirname(outputFilePath)))
     fs_1.default.mkdirSync(path_1.default.dirname(outputFilePath));
 fs_1.default.writeFileSync(outputFilePath, flattenedString);
 console.log(`Flattened file ${filePath} and saved to ${outputFilePath}`);
